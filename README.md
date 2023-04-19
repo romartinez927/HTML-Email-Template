@@ -2,28 +2,19 @@
 
 Buenas! Esta es una plantilla para mensajes de Email, que cree para un desafio. 
 
-## Comenzando 🚀
+## Intro 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
+Esta plantilla la realice con HTML al 100%, y con estilos CSS en línea, para que los estilos puedan ser aplicados en los mensajes de Email.
+Para comenzar, fui realizando el maquetado por secciones, y una vez terminado pase a la parte del Responsive. 
 
 ### Clonar repositorio 🔧
 
 Para poder clonar este repositorio, vas a necesitar Git instalado en tu computadora. Desde la terminal se debe escribir: 
 
 ```
-Da un ejemplo
+https://github.com/romartinez927/HTML-Email-Template.git
 ```
 
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
 
 ### Testing ⌨️
 
