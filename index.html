@@ -2,225 +2,244 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML - Email Template</title>
-	<style type="text/css">
-		body {
-			margin: 0;
-			background-color: #cccccc;
-			width: 100%;
-			table-layout: fixed;
-		}
-		table {
-			border-spacing: 0;
-		}
-		td {
-			padding: 0;
-		}
-		img {
-			border: 0;
-		}
-		strong {
-			font-weight: bold;
-		}
-		.wrapper {
-			background-color: #ffffff;
-			margin: 0 auto;
-			max-width: 600px;
-			border-spacing: 0;
-			font-family: sans-serif;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Email Template</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #cccccc;
+            font-family: sans-serif;
+        }
+        table {
+            border-spacing: 0;
+        }
+        td {
+            padding: 0
+        }
+        img {
+            border: 0
+        }
+        p {
+            font-size: 14px;
+        }
+        .wrapper {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-spacing: 0;
+            text-align: center;
 			color: #4a4a4a
-		}
-		.two-columns {
-			font-size: 0;
-		}
+        }
+        .two-columns {
+            font-size: 0;
+        }
+        .two-columns .padding {
+            padding: 20px 22px 25px 45px
+        }
+        .two-columns .content{
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .two-columns .column {
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .two-columns .column.left {
+            max-width: 340px;
+            text-align: start;
+        }
+        .two-columns .column.right {
+            max-width: 260px;
+            background-color: #f4f4f4;
+            height: 320px;
+        }
+        .button {
+            background-color: darkblue;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff;
+        }
+        .padding-footer-right {
+                padding: 10px 0 10px 120px
+            }
 
-		.two-columns .column {
-			width: 100%;
-			display: inline-block;
-			vertical-align: top;
-		}
-
-		.two-columns .column-left {
-			max-width: 350px;
-		}
-
-		.two-columns .column-right {
-			max-width: 250px;
-		}
-
-		.two-columns .padding {
-			padding: 20px 40px
-		}
-
-		.two-columns .content {
-			font-size: 15px;
-			text-align: left;
-		}
-
-		.footer-right {
-			padding: 10px 130px;
-			text-align: end
-		}
-
-		.footer-left {
-			text-align: start;
-			padding: 27px 32px 10px;
-		}
-
-		@media only screen and (max-device-width: 599px), only screen and (max-width: 599px) {
-			.two-columns .column-left {
-			max-width: 100% !important;
-			display: block !important;
-			}
-			.two-columns .column-right {
-			max-width: 100% !important;
-			display: block !important;
-			padding-left: 50px !important;
-			}
-			.footer-right {
-				padding: 10px 80px !important;
-				text-align: center !important;
-			}
-
-			.footer-left {
-				text-align: center !important;
-				padding: 27px 15px 10px 20px !important;
-			}
-		}
-
-	</style>
+        @media only screen and (max-device-width: 599px), only screen and (max-width: 599px) {
+            .two-columns .column.right {
+                background-color: #fff;
+        }
+            .padding-footer-right {
+                padding: 10px 0 10px 80px !important;
+            }
+            .column.footer {
+                text-align: center !important;
+            }
+        }
+    </style>
 </head>
 <body>
-	<table class="wrapper" width="100%">
-<!-- HEADER -->
-		<tr>
-			<td>
-				<a href="#"><img src="https://i.ibb.co/pRxFJnh/banner.png" alt="Header Lorem Ipsum" width="600" style="max-width: 100%"></a>
-			</td>
-		</tr>
+    <table class="wrapper">
+        <!-- BANNER -->
+        <tr>
+            <td>
+                <a href=""><img src="https://i.ibb.co/pRxFJnh/banner.png" alt="Banner" title="Banner" width="600" style="max-width: 100%;"></a>
+            </td>
+        </tr>
 
-<!-- CONTENIDO PRINCIPAL -->
-		<tr>
-			<td>
-				<table width="100%" style="background-color: #f4f4f4">
-					<tr>
-						<td class="two-columns" style="text-align: center;"> 
-							<table class="column column-left" style="background-color: #ffffff;width:100vw;" >
-								<tr>
-									<td style="padding: 20px">
-										<table>
-											<tr>
-												<td style="font-size: 13px; color: #000; text-align: start; ">
-													<p>
-														<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-													</p>
-													<p>
-														Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													</p>
-													<p>
-														Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <strong>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong>
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-							</table>
-							<table class="column column-right content" style="text-align: center; align-self: center;">
-								<tr>
-									<td class="padding">
-										<table>
-											<tr>
-												<td style="text-align: center; padding-top: 25px; font-weight: bold; line-height: 9px; color: #24145f">
-													<a href="#"><img src="https://i.ibb.co/1GBfVNj/icon-calendario.png" alt="Icono de Calendario" style="max-width:85px;"></a>
-													<p>March 3th | 12:00 PM</p>
-													<p>TBD</p>
-													<button style="padding: 8px 13px; color: #fff; background-color: #24145f; border: none; font-size: 13px; cursor: pointer;">Confirm attendance</button>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>			
-							</table>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
+        <!-- SECTION ONE -->
+        <tr>
+            <td>
+                <table width="100%">
 
-		<tr style="background-color: #24145f;" >
-			<td>
-				<table width="100%" style="padding: 20px 0px;">
-					<tr>
-						<td class="two-columns" style="text-align: center;">
-							<table class="column content" style="max-width: 290px; padding: 10px 15px;">
-								<tr>
-									<td>
-										<a href="#"><img src="https://i.ibb.co/RCH6zB0/img-section-two.png" alt="Video" width="260" style="border: 5px solid #ffffff; border-radius: 3px;"></a>
-									</td>
-								</tr>
-							</table>
-							<table class="column content" style="max-width: 290px; padding: 0 19px 10px;">
-								<tr>
-									<td style="font-size: 13px; color: #eeeeee;">
-										<p>
-											<strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										</p>
-										<p>
-											Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										</p>
-									</td>
-								</tr>		
-							</table>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
+                    <tr>
+                        <td class="two-columns">
 
-		<tr>
-			<td>
-				<table width="100%">
-					<tr>
-						<td style="text-align: center; padding: 15px 0;">
-							<p style="font-size: 1.8em;">Speaker: <span style="color: #24145f"><strong>Lorem Ipsum </strong>- Dolor sit amet</span></p>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
+                            <table class="column left">
+                                <tr>
+                                    <td class="padding">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <strong>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
 
-<!-- FOOTER -->
-		<tr style="background-color: #7d55b5;">
-			<td>
-				<table width="100%">
-					<tr>
-						<td class="two-columns" style="text-align: center;"> 
-							<table class="column content" style="max-width: 300px; text-align: center;">
-								<tr>
-									<td class="footer-left" style="line-height: 7px; color: #eeeeee; ">
-										<p>MORE INFORMATION:</p>
-										<p><span style="font-weight: bolder;">Lorem Ipsum </span>| Vice President</p>
-										<p style="color: #24145f; font-weight: bolder;">consectetur@loremipsum.com</p>
-									</td>
-								</tr>
-							</table>
-							<table class="column content" style="max-width: 300px; ">
-								<tr>
-									<td class="footer-right" style="font-size: 12px; color: #eeeeee; line-height: 5px;">
-										<a href="#"><img src="https://i.ibb.co/187J1Bq/footer.png" alt="Logo Generic"></a>
-										<p>Generic 2020.</p>
-										<p>All rights reserved.</p>
-									</td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
+                            <table class="column right">
+                                <tr>
+                                    <td style="padding: 35px 10px 60px 33px;">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <a href="#"><img src="https://i.ibb.co/1GBfVNj/icon-calendario.png" alt="Icono Calendario" title="Icono Calendario" width="100"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="line-height: 10px; font-weight: 800;">
+                                                    <p style="color: #24145f">March 3th | 12:00 PM</p>
+                                                    <p style="padding: 0 0 25px 0; color: #24145f">TBD</p>
+                                                    <a href="#" class="button">Confirm Attendance</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+        <!-- SECTION TWO -->
+        <tr>
+            <td>
+                <table width="100%" style="background-color: darkblue; color: #fff; padding: 25px 0">
+                    <tr>
+                        <td class="two-columns">
+
+                            <table class="column" style="max-width: 330px; text-align: center;">
+                                <tr>
+                                    <td style="padding: 10px 0 10px 20px">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <a href="#"><img src="https://i.ibb.co/RCH6zB0/img-section-two.png" alt="Video" title="Video" width="280" style="border: 5px solid #fff; border-radius: 5px;"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column" style="max-width: 250px;">
+                                <tr>
+                                    <td style="padding: 0 10px 9px 17px">
+                                        <table class="content" style="text-align: start;">
+                                            <tr>
+                                                <td>
+                                                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</strong> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- SECTION THREE -->
+        <tr>
+            <td>
+                <h2 style="padding: 15px 0; font-weight: normal; font-size: 23px;">Speaker: <span style="font-weight: bold; color: #24145f">Lorem Ipsum</span> - <span style="font-weight: lighter; color: #24145f">Dolor sit amet</span></h2>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td>
+                <table width="100%" style="background-color: #7d55b5; color: #fff; padding: 10px 0px 10px 0;">
+
+                    <tr>
+                        <td class="two-columns">
+
+                            <table class="column footer" style="text-align: start; max-width: 300px;">
+                                <tr>
+                                    <td style="padding: 20px 22px 25px 57px">
+                                        <table class="content" style="line-height: 7px;">
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size: 13px;">MORE INFORMATION</p>
+                                                    <p style="font-size: 13px;"><strong>Lorem Ipsum</strong> | Vice president</p>
+                                                    <p style="font-size: 13px; color:#24145f; font-weight:800;">consectetur@loremipsum.com</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column footer" style="max-width: 280px; text-align: end;">
+                                <tr>
+                                    <td class="padding-footer-right">
+                                        <table class="content" style="line-height: 5px;">
+                                            <tr>
+                                                <td>
+                                                    <a href="#"><img src="https://i.ibb.co/187J1Bq/footer.png" width="100" alt="Logo" title="Logo"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size: 12px;">Generic 2020</p>
+                                                    <p style="font-size: 12px;">All rights reserved</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+    </table>
 </body>
 </html>
