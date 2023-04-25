@@ -20,6 +20,9 @@
         img {
             border: 0
         }
+        h2 {
+            font-size: 23px
+        }
         p {
             font-size: 14px;
         }
@@ -59,22 +62,44 @@
         .button {
             background-color: darkblue;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 12px 20px;
             color: #fff;
+            display: block;
         }
         .padding-footer-right {
-                padding: 10px 0 10px 120px
-            }
+            padding: 10px 0 10px 120px
+        }
+        .padding-footer-left {
+            padding: 20px 22px 25px 57px
+        }
+        .section-two-padding {
+            padding: 0 10px 9px 17px
+        }
+        .color-email {
+            color: #24145f !important;
+        }
 
         @media only screen and (max-device-width: 599px), only screen and (max-width: 599px) {
             .two-columns .column.right {
-                background-color: #fff;
+                background-color: #fff !important;
         }
             .padding-footer-right {
-                padding: 10px 0 10px 80px !important;
+                padding: 10px 0 10px 75px !important;
+            }
+            .padding-footer-left {
+                padding: 10px 10px 10px 35px !important;
             }
             .column.footer {
                 text-align: center !important;
+            }
+            .two-columns .padding {
+            padding: 20px 0 25px 10px !important;
+            }
+            .section-two-padding {
+            padding: 0 0 9px 0 !important;
+            }
+            h2 {
+                font-size: 20px !important;
             }
         }
     </style>
@@ -114,7 +139,7 @@
 
                             <table class="column right">
                                 <tr>
-                                    <td style="padding: 35px 10px 60px 33px;">
+                                    <td style="padding: 35px 10px 60px 30px;">
                                         <table class="content">
                                             <tr>
                                                 <td>
@@ -160,9 +185,9 @@
                                 </tr>
                             </table>
 
-                            <table class="column" style="max-width: 250px;">
+                            <table class="column" style="max-width: 260px;">
                                 <tr>
-                                    <td style="padding: 0 10px 9px 17px">
+                                    <td class="section-two-padding">
                                         <table class="content" style="text-align: start;">
                                             <tr>
                                                 <td>
@@ -184,7 +209,7 @@
         <!-- SECTION THREE -->
         <tr>
             <td>
-                <h2 style="padding: 15px 0; font-weight: normal; font-size: 23px;">Speaker: <span style="font-weight: bold; color: #24145f">Lorem Ipsum</span> - <span style="font-weight: lighter; color: #24145f">Dolor sit amet</span></h2>
+                <h2 style="padding: 15px 0; font-weight: normal;">Speaker: <span style="font-weight: bold; color: #24145f">Lorem Ipsum</span> - <span style="font-weight: lighter; color: #24145f">Dolor sit amet</span></h2>
             </td>
         </tr>
 
@@ -198,13 +223,13 @@
 
                             <table class="column footer" style="text-align: start; max-width: 300px;">
                                 <tr>
-                                    <td style="padding: 20px 22px 25px 57px">
+                                    <td class="padding-footer-left">
                                         <table class="content" style="line-height: 7px;">
                                             <tr>
                                                 <td>
                                                     <p style="font-size: 13px;">MORE INFORMATION</p>
                                                     <p style="font-size: 13px;"><strong>Lorem Ipsum</strong> | Vice president</p>
-                                                    <p style="font-size: 13px; color:#24145f; font-weight:800;">consectetur@loremipsum.com</p>
+                                                    <p class="color-email" style="font-size: 13px; font-weight:800;">consectetur@loremipsum.com</p>
                                                 </td>
                                             </tr>
                                         </table>
